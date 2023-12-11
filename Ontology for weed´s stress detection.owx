@@ -1,0 +1,1312 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://weedeye.leandrorego.com"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://weedeye.leandrorego.com">
+    <Prefix name="" IRI="http://weedeye.leandrorego.com#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="gufo" IRI="http://purl.org/nemo/gufo#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Uma ontologia para detecção de eficiência da aplicação de herbicidas em plantas daninhas</Literal>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:Category"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:IntrinsicMode"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:Kind"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:Quality"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:Relator"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gufo:VariableCollection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdverseEffects"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Agronomy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ApplicationProject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Artefact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biochemist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChemicalProduct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Computation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConvolutionalNeuralNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Crops"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cultivation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Culture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dataset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Developer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Diagnosis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DigitalCamera"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EnforcementCommittee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Farmer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hardware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Herbicide"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HerbicideApplication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HerbicideIndication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Image"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImageCapture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Legislation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MachineLearning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Software"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SoftwareApplication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stress"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StressDetection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Weed"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WeedImage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#knowlegArea"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gufo:participatedIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Captures"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Causes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ComputationHasHardware"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#DiagnosisHasstress"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HardwareHasDigitalCamera"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HerbicideAplicationHasHerbicide"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#developedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#developes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#digitalCameraHasImageCapture"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasComponent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#herbicideIndicationHasWeed"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#herbucideHasAdverseEffect"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isComponentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#knows"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#machineLearningHasComputation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#machineLearningHasConvolutionalNeuralNetwork"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#machineLearningHasSoftware"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#plantHasCrops"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#softwareHasComputation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#weedHasHerbicideApplication"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#weedHasImageCapture"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#weedImageHasStressDetection"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Resolution"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dateTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dosing"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#height"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#intensity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#label"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#scientificName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#width"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AdverseEffects"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Alterações_na_Morfologia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aplication"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ApplicationProject"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Azevém"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Biochemist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Buva"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Capim-pé-de-galinha"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Caruru"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ChemicalProduct"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Computation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ConvolutionalNeuralNetwork"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Crops"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cultivation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Descoloração_e_Amarelecimento"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Developer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Diagnosis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DigitalCamera"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Distúrbios_na_Formação_de_Brotos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EnforcementCommittee"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Farmer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Feijao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hardware"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Herbicide"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HerbicideApplication"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HerbicideIndication"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ImageCapture"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Inibição_do_Crescimento"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Legislation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MachineLearning"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Milho"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Morte_das_Partes_Aéreas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Murchamento_e_Enrolamento_das_Folhas"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Necrose_e_Secagem"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Plant"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Redução_da_Produção_de_Sementes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Software"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SoftwareApplication"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Soja"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stress"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StressDetection"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tiririca"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Weed"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WeedImage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Weed_Deep"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#AdverseEffects"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="gufo:Quality"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#Name"/>
+                <Datatype abbreviatedIRI="xsd:string"/>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#AdverseEffects"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#intensity"/>
+            <Datatype abbreviatedIRI="xsd:float"/>
+        </DataSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ApplicationProject"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="gufo:Relator"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#developedBy"/>
+                <Class IRI="#Developer"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Biochemist"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Person"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#knows"/>
+                <Class IRI="#Agronomy"/>
+            </ObjectSomeValuesFrom>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+                <Class IRI="#ChemicalProduct"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ConvolutionalNeuralNetwork"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#SoftwareApplication"/>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+                <Class IRI="#SoftwareApplication"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Crops"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="gufo:VariableCollection"/>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectInverseOf>
+                    <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+                </ObjectInverseOf>
+                <Class IRI="#Cultivation"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Crops"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComponent"/>
+            <Class IRI="#Plant"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Cultivation"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="gufo:Relator"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Class IRI="#Culture"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Culture"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Plant"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#Name"/>
+                <Datatype abbreviatedIRI="xsd:string"/>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Dataset"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="gufo:VariableCollection"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Class IRI="#Image"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Developer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Person"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#knows"/>
+                <Class IRI="#Computation"/>
+            </ObjectSomeValuesFrom>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+                <Class IRI="#SoftwareApplication"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Diagnosis"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Artefact"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Class IRI="#AdverseEffects"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Class IRI="#Herbicide"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Class IRI="#HerbicideApplication"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Class IRI="#Weed"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DigitalCamera"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Hardware"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Captures"/>
+                <Class IRI="#WeedImage"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#EnforcementCommittee"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="gufo:VariableCollection"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+                <Class IRI="#ApplicationProject"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Class IRI="#Biochemist"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Class IRI="#Developer"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Class IRI="#Farmer"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Farmer"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Person"/>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+                <Class IRI="#Cultivation"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Herbicide"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#ChemicalProduct"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Causes"/>
+                <Class IRI="#AdverseEffects"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HerbicideApplication"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="gufo:Relator"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Class IRI="#Herbicide"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Class IRI="#Weed"/>
+            </ObjectSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#dateTime"/>
+                <Datatype abbreviatedIRI="xsd:string"/>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#HerbicideIndication"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="gufo:Relator"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Class IRI="#Crops"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Class IRI="#Herbicide"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Class IRI="#Weed"/>
+            </ObjectSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#dosing"/>
+                <Datatype abbreviatedIRI="xsd:int"/>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ImageCapture"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="gufo:Relator"/>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+                <Class IRI="#WeedImage"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MachineLearning"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#SoftwareApplication"/>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+                <Class IRI="#SoftwareApplication"/>
+            </ObjectMinCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Stress"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="gufo:IntrinsicMode"/>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectInverseOf>
+                    <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+                </ObjectInverseOf>
+                <Class IRI="#Plant"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#StressDetection"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="gufo:Relator"/>
+            <ObjectMinCardinality cardinality="1">
+                <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+                <Class IRI="#Diagnosis"/>
+            </ObjectMinCardinality>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectInverseOf>
+                    <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+                </ObjectInverseOf>
+                <Class IRI="#SoftwareApplication"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Weed"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Plant"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#Causes"/>
+                <Class IRI="#AdverseEffects"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#WeedImage"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Image"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Class IRI="#Weed"/>
+            </ObjectSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#label"/>
+                <Datatype abbreviatedIRI="xsd:string"/>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Agronomy"/>
+        <Class IRI="#knowlegArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Computation"/>
+        <Class IRI="#knowlegArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DigitalCamera"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#Resolution"/>
+            <Datatype abbreviatedIRI="owl:rational"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Image"/>
+        <Class IRI="#Artefact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Legislation"/>
+        <Class IRI="#knowlegArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Plant"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
+            <Class IRI="#Stress"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SoftwareApplication"/>
+        <Class IRI="#Software"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class abbreviatedIRI="gufo:Relator"/>
+        <Class IRI="#Crops"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ChemicalProduct"/>
+        <Class IRI="#Diagnosis"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ConvolutionalNeuralNetwork"/>
+        <Class IRI="#Diagnosis"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Culture"/>
+        <Class IRI="#Weed"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Diagnosis"/>
+        <Class IRI="#DigitalCamera"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Diagnosis"/>
+        <Class IRI="#WeedImage"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Hardware"/>
+        <Class IRI="#Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Herbicide"/>
+        <Class IRI="#Plant"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Image"/>
+        <Class IRI="#SoftwareApplication"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Person"/>
+        <Class IRI="#Software"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Person"/>
+        <Class IRI="#knowlegArea"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#AdverseEffects"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffects"/>
+        <NamedIndividual IRI="#Alterações_na_Morfologia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#Aplication"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#ApplicationProject"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Weed"/>
+        <NamedIndividual IRI="#Azevém"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#Biochemist"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Weed"/>
+        <NamedIndividual IRI="#Buva"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Weed"/>
+        <NamedIndividual IRI="#Capim-pé-de-galinha"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Weed"/>
+        <NamedIndividual IRI="#Caruru"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Category"/>
+        <NamedIndividual IRI="#ChemicalProduct"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#Computation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#ConvolutionalNeuralNetwork"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#Crops"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#Cultivation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffects"/>
+        <NamedIndividual IRI="#Descoloração_e_Amarelecimento"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#Developer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#Diagnosis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#DigitalCamera"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffects"/>
+        <NamedIndividual IRI="#Distúrbios_na_Formação_de_Brotos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#EnforcementCommittee"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#Farmer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Culture"/>
+        <NamedIndividual IRI="#Feijao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Category"/>
+        <NamedIndividual IRI="#Hardware"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#Herbicide"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#HerbicideApplication"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#HerbicideIndication"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#ImageCapture"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffects"/>
+        <NamedIndividual IRI="#Inibição_do_Crescimento"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#Legislation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#MachineLearning"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Culture"/>
+        <NamedIndividual IRI="#Milho"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffects"/>
+        <NamedIndividual IRI="#Morte_das_Partes_Aéreas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffects"/>
+        <NamedIndividual IRI="#Murchamento_e_Enrolamento_das_Folhas"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffects"/>
+        <NamedIndividual IRI="#Necrose_e_Secagem"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffects"/>
+        <NamedIndividual IRI="#Redução_da_Produção_de_Sementes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Category"/>
+        <NamedIndividual IRI="#Software"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#SoftwareApplication"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Culture"/>
+        <NamedIndividual IRI="#Soja"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#Stress"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#StressDetection"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Weed"/>
+        <NamedIndividual IRI="#Tiririca"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#Weed"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="gufo:Kind"/>
+        <NamedIndividual IRI="#WeedImage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dataset"/>
+        <NamedIndividual IRI="#Weed_Deep"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#scientificName"/>
+        <NamedIndividual IRI="#Azevém"/>
+        <Literal>Lolium multiflorum</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#scientificName"/>
+        <NamedIndividual IRI="#Buva"/>
+        <Literal>Conyza canadensis</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#scientificName"/>
+        <NamedIndividual IRI="#Capim-pé-de-galinha"/>
+        <Literal>Eleusine indica</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#scientificName"/>
+        <NamedIndividual IRI="#Caruru"/>
+        <Literal>Amaranthus retroflexus</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#scientificName"/>
+        <NamedIndividual IRI="#Tiririca"/>
+        <Literal>Cyperus rotundus</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#developedBy"/>
+        <ObjectProperty IRI="#developes"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasComponent"/>
+        <ObjectProperty IRI="#isComponentOf"/>
+    </InverseObjectProperties>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#ComputationHasHardware"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#DiagnosisHasstress"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#HardwareHasDigitalCamera"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#HerbicideAplicationHasHerbicide"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#digitalCameraHasImageCapture"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasComponent"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#machineLearningHasConvolutionalNeuralNetwork"/>
+    </InverseFunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="gufo:participatedIn"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ComputationHasHardware"/>
+        <Class IRI="#Computation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#DiagnosisHasstress"/>
+        <Class IRI="#Diagnosis"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HardwareHasDigitalCamera"/>
+        <Class IRI="#Hardware"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HerbicideAplicationHasHerbicide"/>
+        <Class IRI="#HerbicideApplication"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#digitalCameraHasImageCapture"/>
+        <Class IRI="#DigitalCamera"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#herbicideIndicationHasWeed"/>
+        <Class IRI="#HerbicideIndication"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#herbucideHasAdverseEffect"/>
+        <Class IRI="#Herbicide"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isComponentOf"/>
+        <Class IRI="#Developer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#machineLearningHasComputation"/>
+        <Class IRI="#MachineLearning"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#machineLearningHasConvolutionalNeuralNetwork"/>
+        <Class IRI="#MachineLearning"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#machineLearningHasSoftware"/>
+        <Class IRI="#MachineLearning"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#plantHasCrops"/>
+        <Class IRI="#Plant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#softwareHasComputation"/>
+        <Class IRI="#Software"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#weedHasHerbicideApplication"/>
+        <Class IRI="#Weed"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#weedHasImageCapture"/>
+        <Class IRI="#Weed"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#weedImageHasStressDetection"/>
+        <Class IRI="#WeedImage"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gufo:participatedIn"/>
+        <Class IRI="#EnforcementCommittee"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ComputationHasHardware"/>
+        <Class IRI="#Hardware"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#DiagnosisHasstress"/>
+        <Class IRI="#AdverseEffects"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#DiagnosisHasstress"/>
+        <Class IRI="#Stress"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HardwareHasDigitalCamera"/>
+        <Class IRI="#DigitalCamera"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HerbicideAplicationHasHerbicide"/>
+        <Class IRI="#Herbicide"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#digitalCameraHasImageCapture"/>
+        <Class IRI="#ImageCapture"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#herbicideIndicationHasWeed"/>
+        <Class IRI="#Weed"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#herbucideHasAdverseEffect"/>
+        <Class IRI="#AdverseEffects"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isComponentOf"/>
+        <Class IRI="#Computation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#machineLearningHasComputation"/>
+        <Class IRI="#Computation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#machineLearningHasConvolutionalNeuralNetwork"/>
+        <Class IRI="#ConvolutionalNeuralNetwork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#machineLearningHasSoftware"/>
+        <Class IRI="#Software"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#plantHasCrops"/>
+        <Class IRI="#Crops"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#softwareHasComputation"/>
+        <Class IRI="#Computation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#weedHasHerbicideApplication"/>
+        <Class IRI="#HerbicideApplication"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#weedHasImageCapture"/>
+        <Class IRI="#ImageCapture"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#weedImageHasStressDetection"/>
+        <Class IRI="#StressDetection"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#dateTime"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#dosing"/>
+        <DataProperty IRI="#dateTime"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#height"/>
+        <DataProperty IRI="#Resolution"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#scientificName"/>
+        <DataProperty IRI="#Name"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#width"/>
+        <DataProperty IRI="#Resolution"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Name"/>
+        <Class IRI="#ChemicalProduct"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Name"/>
+        <Class IRI="#Person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#scientificName"/>
+        <Class IRI="#Plant"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#label"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#scientificName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AdverseEffects</IRI>
+        <Literal xml:lang="en">Adverse effects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ApplicationProject</IRI>
+        <Literal xml:lang="en">Application Project</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Biochemist</IRI>
+        <Literal xml:lang="en">Biochemist</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChemicalProduct</IRI>
+        <Literal xml:lang="en">Chemical Product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Computation</IRI>
+        <Literal xml:lang="en">Computation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ConvolutionalNeuralNetwork</IRI>
+        <Literal xml:lang="en">Convolutional Neural Network</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Crops</IRI>
+        <Literal xml:lang="en">Crops</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cultivation</IRI>
+        <Literal xml:lang="en">Cultivation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Developer</IRI>
+        <Literal xml:lang="en">Developer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Diagnosis</IRI>
+        <Literal xml:lang="en">Diagnosis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DigitalCamera</IRI>
+        <Literal xml:lang="en">Digital camera</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EnforcementCommittee</IRI>
+        <Literal xml:lang="en">Enforcement Committee</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Farmer</IRI>
+        <Literal xml:lang="en">Farmer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Hardware</IRI>
+        <Literal xml:lang="en">Hardware</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Herbicide</IRI>
+        <Literal xml:lang="en">Herbicide</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HerbicideApplication</IRI>
+        <Literal xml:lang="en">Herbicide Application</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#HerbicideIndication</IRI>
+        <Literal xml:lang="en">Herbicide Indication</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ImageCapture</IRI>
+        <Literal xml:lang="en">Image Capture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Legislation</IRI>
+        <Literal xml:lang="en">Legislation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MachineLearning</IRI>
+        <Literal xml:lang="en">Machine Learning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Plant</IRI>
+        <Literal xml:lang="en">Plant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Software</IRI>
+        <Literal xml:lang="en">Software</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SoftwareApplication</IRI>
+        <Literal xml:lang="en">Software Application</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Stress</IRI>
+        <Literal xml:lang="en">Stress</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#StressDetection</IRI>
+        <Literal xml:lang="en">Stress Detection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Weed</IRI>
+        <Literal xml:lang="en">Weed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WeedImage</IRI>
+        <Literal xml:lang="en">Weed Image</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
