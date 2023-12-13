@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://weedeye.leandrorego.com"
+     xml:base="https://raw.githubusercontent.com/leandrogrego/WeedEye/main/Ontology%20for%20weed%C2%B4s%20stress%20detection.owx"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://weedeye.leandrorego.com">
+     ontologyIRI="https://raw.githubusercontent.com/leandrogrego/WeedEye/main/Ontology%20for%20weed%C2%B4s%20stress%20detection.owx">
     <Prefix name="" IRI="http://weedeye.leandrorego.com#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
