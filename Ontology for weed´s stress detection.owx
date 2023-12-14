@@ -165,6 +165,9 @@
         <ObjectProperty IRI="#HerbicideAplicationHasHerbicide"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#cousedBy"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#developedBy"/>
     </Declaration>
     <Declaration>
@@ -198,6 +201,9 @@
         <ObjectProperty IRI="#machineLearningHasSoftware"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#mediatedBy"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#plantHasCrops"/>
     </Declaration>
     <Declaration>
@@ -217,6 +223,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Resolution"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Version"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#dateTime"/>
@@ -333,6 +342,9 @@
         <NamedIndividual IRI="#Milho"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#MobileNetV2"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Morte_das_Partes_Aéreas"/>
     </Declaration>
     <Declaration>
@@ -369,6 +381,9 @@
         <NamedIndividual IRI="#Weed"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#WeedEye"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#WeedImage"/>
     </Declaration>
     <Declaration>
@@ -378,18 +393,19 @@
         <Class IRI="#AdverseEffects"/>
         <ObjectIntersectionOf>
             <Class abbreviatedIRI="gufo:Quality"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#cousedBy"/>
+                <Class IRI="#Herbicide"/>
+            </ObjectSomeValuesFrom>
             <DataSomeValuesFrom>
                 <DataProperty IRI="#Name"/>
                 <Datatype abbreviatedIRI="xsd:string"/>
             </DataSomeValuesFrom>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#intensity"/>
+                <Datatype abbreviatedIRI="xsd:float"/>
+            </DataSomeValuesFrom>
         </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#AdverseEffects"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#intensity"/>
-            <Datatype abbreviatedIRI="xsd:float"/>
-        </DataSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#ApplicationProject"/>
@@ -417,6 +433,10 @@
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#ConvolutionalNeuralNetwork"/>
+        <Class IRI="#MachineLearning"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ConvolutionalNeuralNetwork"/>
         <ObjectIntersectionOf>
             <Class IRI="#SoftwareApplication"/>
             <ObjectMinCardinality cardinality="1">
@@ -424,25 +444,6 @@
                 <Class IRI="#SoftwareApplication"/>
             </ObjectMinCardinality>
         </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Crops"/>
-        <ObjectIntersectionOf>
-            <Class abbreviatedIRI="gufo:VariableCollection"/>
-            <ObjectExactCardinality cardinality="1">
-                <ObjectInverseOf>
-                    <ObjectProperty abbreviatedIRI="gufo:mediates"/>
-                </ObjectInverseOf>
-                <Class IRI="#Cultivation"/>
-            </ObjectExactCardinality>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Crops"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#hasComponent"/>
-            <Class IRI="#Plant"/>
-        </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#Cultivation"/>
@@ -475,38 +476,12 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#Developer"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Person"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#knows"/>
-                <Class IRI="#Computation"/>
-            </ObjectSomeValuesFrom>
-            <ObjectMinCardinality cardinality="1">
-                <ObjectProperty abbreviatedIRI="gufo:mediates"/>
-                <Class IRI="#SoftwareApplication"/>
-            </ObjectMinCardinality>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
         <Class IRI="#Diagnosis"/>
         <ObjectIntersectionOf>
             <Class IRI="#Artefact"/>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasComponent"/>
-                <Class IRI="#AdverseEffects"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasComponent"/>
-                <Class IRI="#Herbicide"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasComponent"/>
-                <Class IRI="#HerbicideApplication"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasComponent"/>
-                <Class IRI="#Weed"/>
+                <ObjectProperty IRI="#mediatedBy"/>
+                <Class IRI="#StressDetection"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -586,19 +561,21 @@
             <Class abbreviatedIRI="gufo:Relator"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#hasComponent"/>
-                <Class IRI="#Crops"/>
-            </ObjectSomeValuesFrom>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#hasComponent"/>
                 <Class IRI="#Herbicide"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#hasComponent"/>
                 <Class IRI="#Weed"/>
             </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Image"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Artefact"/>
             <DataSomeValuesFrom>
-                <DataProperty IRI="#dosing"/>
-                <Datatype abbreviatedIRI="xsd:int"/>
+                <DataProperty IRI="#Resolution"/>
+                <Datatype abbreviatedIRI="owl:rational"/>
             </DataSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
@@ -623,6 +600,16 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
+        <Class IRI="#SoftwareApplication"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Software"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#mediatedBy"/>
+                <Class IRI="#Developer"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
         <Class IRI="#Stress"/>
         <ObjectIntersectionOf>
             <Class abbreviatedIRI="gufo:IntrinsicMode"/>
@@ -638,10 +625,6 @@
         <Class IRI="#StressDetection"/>
         <ObjectIntersectionOf>
             <Class abbreviatedIRI="gufo:Relator"/>
-            <ObjectMinCardinality cardinality="1">
-                <ObjectProperty abbreviatedIRI="gufo:mediates"/>
-                <Class IRI="#Diagnosis"/>
-            </ObjectMinCardinality>
             <ObjectExactCardinality cardinality="1">
                 <ObjectInverseOf>
                     <ObjectProperty abbreviatedIRI="gufo:mediates"/>
@@ -653,11 +636,8 @@
     <EquivalentClasses>
         <Class IRI="#Weed"/>
         <ObjectIntersectionOf>
+            <Class abbreviatedIRI="gufo:Category"/>
             <Class IRI="#Plant"/>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#Causes"/>
-                <Class IRI="#AdverseEffects"/>
-            </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -683,6 +663,35 @@
         <Class IRI="#knowlegArea"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Crops"/>
+        <Class abbreviatedIRI="gufo:VariableCollection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Crops"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComponent"/>
+            <Class IRI="#Plant"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Developer"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Developer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gufo:mediates"/>
+            <Class IRI="#SoftwareApplication"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Developer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#knows"/>
+            <Class IRI="#Computation"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#DigitalCamera"/>
         <DataSomeValuesFrom>
             <DataProperty IRI="#Resolution"/>
@@ -690,23 +699,8 @@
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Image"/>
-        <Class IRI="#Artefact"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Legislation"/>
         <Class IRI="#knowlegArea"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Plant"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty abbreviatedIRI="gufo:inheresIn"/>
-            <Class IRI="#Stress"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#SoftwareApplication"/>
-        <Class IRI="#Software"/>
     </SubClassOf>
     <DisjointClasses>
         <Class abbreviatedIRI="gufo:Relator"/>
@@ -719,10 +713,6 @@
     <DisjointClasses>
         <Class IRI="#ConvolutionalNeuralNetwork"/>
         <Class IRI="#Diagnosis"/>
-    </DisjointClasses>
-    <DisjointClasses>
-        <Class IRI="#Culture"/>
-        <Class IRI="#Weed"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#Diagnosis"/>
@@ -877,6 +867,10 @@
         <NamedIndividual IRI="#Milho"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#ConvolutionalNeuralNetwork"/>
+        <NamedIndividual IRI="#MobileNetV2"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#AdverseEffects"/>
         <NamedIndividual IRI="#Morte_das_Partes_Aéreas"/>
     </ClassAssertion>
@@ -921,6 +915,10 @@
         <NamedIndividual IRI="#Weed"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#SoftwareApplication"/>
+        <NamedIndividual IRI="#WeedEye"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class abbreviatedIRI="gufo:Kind"/>
         <NamedIndividual IRI="#WeedImage"/>
     </ClassAssertion>
@@ -953,6 +951,19 @@
         <NamedIndividual IRI="#Tiririca"/>
         <Literal>Cyperus rotundus</Literal>
     </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Version"/>
+        <NamedIndividual IRI="#WeedEye"/>
+        <Literal></Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#mediatedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Causes"/>
+        <ObjectProperty IRI="#cousedBy"/>
+    </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="#developedBy"/>
         <ObjectProperty IRI="#developes"/>
@@ -1270,6 +1281,11 @@
         <Literal xml:lang="en">Machine Learning</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MobileNetV2</IRI>
+        <Literal>Rede neural com capacidade de detecção e classificação de características em imagens digitais.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Plant</IRI>
         <Literal xml:lang="en">Plant</Literal>
@@ -1298,6 +1314,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Weed</IRI>
         <Literal xml:lang="en">Weed</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WeedEye</IRI>
+        <Literal>Sisttema de detecção de stress em plantas daninhas.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
