@@ -433,10 +433,6 @@
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#ConvolutionalNeuralNetwork"/>
-        <Class IRI="#MachineLearning"/>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ConvolutionalNeuralNetwork"/>
         <ObjectIntersectionOf>
             <Class IRI="#SoftwareApplication"/>
             <ObjectMinCardinality cardinality="1">
@@ -592,11 +588,11 @@
     <EquivalentClasses>
         <Class IRI="#MachineLearning"/>
         <ObjectIntersectionOf>
-            <Class IRI="#SoftwareApplication"/>
-            <ObjectMinCardinality cardinality="1">
-                <ObjectProperty abbreviatedIRI="gufo:mediates"/>
-                <Class IRI="#SoftwareApplication"/>
-            </ObjectMinCardinality>
+            <Class IRI="#Software"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasComponent"/>
+                <Class IRI="#ConvolutionalNeuralNetwork"/>
+            </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
