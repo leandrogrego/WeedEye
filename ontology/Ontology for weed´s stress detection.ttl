@@ -1,0 +1,264 @@
+@prefix : <https://raw.githubusercontent.com/leandrogrego/WeedEye/main/Ontology%20for%20weed%C2%B4s%20stress%20detection.owx#>.
+@prefix gufo: <http://purl.org/nemo/gufo#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<https://raw.githubusercontent.com/leandrogrego/WeedEye/main/Ontology%20for%20weed%C2%B4s%20stress%20detection.owx> rdf:type owl:Ontology;
+    owl:imports gufo:.
+:Plant rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Plant"@en.
+:Crops rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:VariableCollection;
+    rdfs:label "Crops"@en.
+:Stress rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:IntrinsicMode;
+    rdfs:label "Stress"@en.
+:Cultivation rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Relator;
+    rdfs:label "Cultivation"@en.
+:EnforcementCommittee rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:VariableCollection;
+    rdfs:label "Enforcement Committee"@en.
+:StressDetection rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Relator;
+    rdfs:label "Stress Detection"@en.
+:ChemicalProduct rdf:type owl:Class, gufo:Category, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Chemical Product"@en.
+:Computation rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:VariableCollection;
+    rdfs:label "Computation"@en.
+:WeedImage rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Quality;
+    rdfs:label "Weed Image"@en.
+:Diagnosis rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Diagnosis"@en.
+:ImageCapture rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Relator;
+    rdfs:label "Image Capture"@en.
+:ApplicationProject rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Relator;
+    rdfs:label "Application Project"@en.
+:Farmer rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Farmer"@en.
+:Biochemist rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Biochemist"@en.
+:Developer rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Developer"@en.
+:Herbicide rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Herbicide"@en.
+:HerbicideIndication rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Relator;
+    rdfs:label "Herbicide Indication"@en.
+:MachineLearning rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Machine Learning"@en.
+:SoftwareApplication rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Software Application"@en.
+:AdverseEffects rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Quality;
+    rdfs:label "Adverse effects"@en.
+:Aplication rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Relator;
+    rdfs:label "Aplication"@en.
+:Legislation rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Legislation"@en.
+:ConvolutionalNeuralNetwork rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Convolutional Neural Network"@en.
+:HerbicideApplication rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Relator;
+    rdfs:label "Herbicide Application"@en.
+:Software rdf:type owl:Class, gufo:Category, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Software"@en.
+:Hardware rdf:type owl:Class, gufo:Category, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Hardware"@en.
+:DigitalCamera rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Digital camera"@en.
+:Weed rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Weed"@en.
+:stressHasDiagnosis rdf:type owl:ObjectProperty;
+    rdfs:domain :Stress;
+    rdfs:range :Diagnosis.
+:developerHasComputation rdf:type owl:ObjectProperty;
+    rdfs:domain :Developer;
+    rdfs:range :Computation.
+:machineLearningHasComputation rdf:type owl:ObjectProperty;
+    rdfs:domain :MachineLearning;
+    rdfs:range :Computation.
+:adverseEffectsHasHerbicide rdf:type owl:ObjectProperty;
+    rdfs:domain :AdverseEffects;
+    rdfs:range :Herbicide.
+:herbicideHasAplication rdf:type owl:ObjectProperty;
+    rdfs:domain :Herbicide;
+    rdfs:range :Aplication.
+:convolutionalNeuralNetworkHasMachineLearning rdf:type owl:ObjectProperty;
+    rdfs:domain :ConvolutionalNeuralNetwork;
+    rdfs:range :MachineLearning.
+:herbicideHasHerbicideApplication rdf:type owl:ObjectProperty;
+    rdfs:domain :Herbicide;
+    rdfs:range :HerbicideApplication.
+:weedImageHasStressDetection rdf:type owl:ObjectProperty;
+    rdfs:domain :WeedImage;
+    rdfs:range :StressDetection.
+:softwareHasComputation rdf:type owl:ObjectProperty;
+    rdfs:domain :Software;
+    rdfs:range :Computation.
+:machineLearningHasSoftware rdf:type owl:ObjectProperty;
+    rdfs:domain :MachineLearning;
+    rdfs:range :Software.
+:digitalCameraHasImageCapture rdf:type owl:ObjectProperty;
+    rdfs:domain :DigitalCamera;
+    rdfs:range :ImageCapture.
+:hardwareHasComputation rdf:type owl:ObjectProperty;
+    rdfs:domain :Hardware;
+    rdfs:range :Computation.
+:digitalCameraHasHardware rdf:type owl:ObjectProperty;
+    rdfs:domain :DigitalCamera;
+    rdfs:range :Hardware.
+:plantHasCrops rdf:type owl:ObjectProperty;
+    rdfs:domain :Plant;
+    rdfs:range :Crops.
+:herbicideIndicationHasWeed rdf:type owl:ObjectProperty;
+    rdfs:domain :HerbicideIndication;
+    rdfs:range :Weed.
+:weedHasImageCapture rdf:type owl:ObjectProperty;
+    rdfs:domain :Weed;
+    rdfs:range :ImageCapture.
+:weedHasHerbicideApplication rdf:type owl:ObjectProperty;
+    rdfs:domain :Weed;
+    rdfs:range :HerbicideApplication.
+:weedHasPlant rdf:type owl:ObjectProperty;
+    rdfs:domain :Weed;
+    rdfs:range :Plant.
+:EnforcementCommittee rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:participatedIn ];
+  owl:someValuesFrom :Plant
+].
+:Crops rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Cultivation
+].
+:Diagnosis rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :StressDetection
+].
+:StressDetection rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Diagnosis
+], [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :SoftwareApplication
+].
+:SoftwareApplication rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :StressDetection
+], [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:mediates ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Computation
+].
+:Computation rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :SoftwareApplication
+].
+:EnforcementCommittee rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :ApplicationProject
+].
+:Stress rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Plant
+].
+:Plant rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Stress
+].
+:Farmer rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Cultivation
+].
+:Biochemist rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :ChemicalProduct
+].
+:Developer rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :SoftwareApplication
+].
+:Farmer rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :HerbicideIndication
+].
+:Legislation rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Aplication
+].
+:Biochemist rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :Aplication
+].
+:ConvolutionalNeuralNetwork rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :SoftwareApplication
+].
+:Farmer rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :HerbicideApplication
+].
+:ImageCapture rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :WeedImage
+].
