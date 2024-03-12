@@ -58,7 +58,6 @@ Para uma compreensão mais visual da ontologia, consulte as figuras abaixo:
 
 ### 8.1 Visão de Computação
 
-[Inserir Figura 1: Diagrama de Visão de Domínio Computação]
 ![Diagrama de Visão de Domínio Computação](images/computation.png)
 
 ### 8.2 Visão de Agricultura
@@ -67,7 +66,6 @@ Para uma compreensão mais visual da ontologia, consulte as figuras abaixo:
 
 ### 8.3 Visão de Bioquímica
 
-[Inserir Figura 3: Diagrama de Visão de Domínio Bioquímica]
 ![Diagrama de Visão de Domínio Bioquímica](images/biochamecal.png)
 
 Esta documentação oferece uma visão geral da ontologia e orientações básicas para sua utilização. Certifique-se de consultar a estrutura detalhada nos arquivos OWL para uma compreensão completa dos conceitos e relações presentes na ontologia.
